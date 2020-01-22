@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Dennis Heeffer - Projects</title>
+    <title>Spheya - Projects</title>
 
     <meta charset="UTF-8">
 
@@ -20,8 +20,8 @@
       <div class="header-element">
         <div class="header-image">
           <div class="header-content">
-            <h1 class="name">Dennis Heeffer</h1>
-            <p class="name-summary">ICT Student at Fontys Tilburg</p>
+            <h1 class="name">Spheya</h1>
+            <p class="name-summary">Reddit said I'm not the asshole</p>
           </div>
         </div>
       </div>
@@ -41,19 +41,72 @@
     <ul class="projects">
       <li class="project">
         <div class="content">
-          <h2>Voxel Raytracer</h2>
+          <h2 class="white-background">Photon Tracer</h2>
+          <div class="showcase right" style="width: 300px">
+            <img src="photontracer.png">
+            <p>Ambient occlusion, global illumination and soft shadows</p>
+          </div>
+
           <p>
-          This project is still in development, expect more info here around january 2020.<br>
+          I am working on a photon tracer, which is basically a pathtracer but slower.<br>
           <br>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed cras ornare arcu dui vivamus arcu. Urna duis convallis convallis tellus. Ullamcorper a lacus vestibulum sed arcu non odio euismod. Nulla aliquet enim tortor at auctor urna nunc. Sollicitudin aliquam ultrices sagittis orci. Ac auctor augue mauris augue neque gravida in fermentum. Tellus pellentesque eu tincidunt tortor aliquam nulla facilisi cras. Fames ac turpis egestas sed tempus urna. Ipsum dolor sit amet consectetur adipiscing elit duis. Commodo viverra maecenas accumsan lacus vel facilisis volutpat est velit. Ut diam quam nulla porttitor massa id neque aliquam vestibulum. Consectetur adipiscing elit pellentesque habitant morbi tristique senectus. Sed enim ut sem viverra aliquet. Consectetur adipiscing elit ut aliquam purus sit amet. Nisl suscipit adipiscing bibendum est ultricies. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt.
+          Instead of tracing from the camera, I'm tracing form the lightsources, because this is more like light works in the real world, I can add ambient occlusion, global illumination and soft shadows with a small amount of code, and it is more accurate than an approximation as well. This photon tracer is written on the CPU, because it is way easier to do it this way, and I am not really planning on actually using it for anything serious.
+          <br>
+          I also want to implement stuff like reflection, refraction and physically based materials.<br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
           </p>
+          <a class="white-background" href="https://github.com/Spheya/PhotonTracer">Github Link</a>
         </div>
       </li>
 
       <li class="project">
         <div class="content">
-          <h2>Hack and Slash Platformer Game</h2>
-          <p>This project is still in development, expect more info here around january 2020.<br>
+          <h2 class="white-background">Voxel Raytracer</h2>
+          <div class="showcase left" style="width: 500px">
+            <img src="voxelraytracer.png">
+            <p>Ambient occlusion, global illumination and soft shadows</p>
+          </div>
+          <p>
+          I worked on a Voxel Raytracer for a school project in GLSL with C#<br>
+          <br>
+          Our goal was to create a voxel game, and we thought that raytracing would be fun. Because it needed to be done quickly there isn't really that much to it. It's just a raytracer that can render a voxel mesh.<br>
+          We used checkerboard rendering to make sure that it ran at a high enough fps. And we also didn't implement refraction, as we thought it would cause too much of a performance loss and we didn't really need it.
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+        </p>
+        <br>
+        <a class="white-background" href="https://github.com/Spheya/Voxel-Raytracer">Github Link</a>
+        </div>
+      </li>
+
+      <li class="project">
+        <div class="content">
+          <h2 class="white-background">Hack and Slash Platformer Game</h2>
+          <p>This project is still in development, expect more info here later.<br>
           <br>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed cras ornare arcu dui vivamus arcu. Urna duis convallis convallis tellus. Ullamcorper a lacus vestibulum sed arcu non odio euismod. Nulla aliquet enim tortor at auctor urna nunc. Sollicitudin aliquam ultrices sagittis orci. Ac auctor augue mauris augue neque gravida in fermentum. Tellus pellentesque eu tincidunt tortor aliquam nulla facilisi cras. Fames ac turpis egestas sed tempus urna. Ipsum dolor sit amet consectetur adipiscing elit duis. Commodo viverra maecenas accumsan lacus vel facilisis volutpat est velit. Ut diam quam nulla porttitor massa id neque aliquam vestibulum. Consectetur adipiscing elit pellentesque habitant morbi tristique senectus. Sed enim ut sem viverra aliquet. Consectetur adipiscing elit ut aliquam purus sit amet. Nisl suscipit adipiscing bibendum est ultricies. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt.<br>
           <br>

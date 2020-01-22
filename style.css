@@ -152,7 +152,7 @@ p, a{
   border-top: 0px;
 }
 
-.project h2 {
+.project .white-background {
   width: max-content;
   background-color: #fcfcfc;
   padding: 4px 32px;
@@ -198,4 +198,31 @@ p, a{
   -webkit-box-shadow: 0px -10px 10px -10px rgba(0,0,0,0.4);
   -moz-box-shadow: 0px -10px 10px -10px rgba(0,0,0,0.4);
   box-shadow: 0px -10px 10px -10px rgba(0,0,0,0.4);
+}
+
+.right {
+  float: right;
+  margin: 4px 0px 4px 32px;
+}
+
+.left {
+  float: left;
+  margin: 4px 32px 4px 0px;
+}
+
+.showcase{
+  background: #fcfcfc;
+
+  box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.4), 0px -10px 10px -10px rgba(0,0,0,0.4);
+}
+
+.showcase p {
+  font-style: italic;
+  padding: 5px;
+  text-align: center;
+}
+
+.showcase img {
+  width: 100%;
+  height: auto;
 }
