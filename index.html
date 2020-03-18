@@ -1,122 +1,133 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Spheya - Projects</title>
+    <!-- Icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <meta charset="UTF-8">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:800&display=swap" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
-
-    <script>
-      function js_Load(){
-        document.body.style.visibility='visible';
-      }
-    </script>
+    <link rel="stylesheet" href="style.css">
   </head>
 
-  <body style="visibility: hidden;" onload="js_Load()">
+  <body>
     <div class="header">
-      <div class="header-element">
-        <div class="header-image">
-          <div class="header-content">
-            <h1 class="name">Spheya</h1>
-            <p class="name-summary">Reddit said I'm not the asshole</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="header-element">
-        <div class="navigation-bar-wrapper">
+        <div class="title">
           <div class="content">
-            <ul class="navigation-bar">
-              <li class="navigation-bar-item selected-navigation-bar-item"><a href="https://spheya.github.io/"><p>Projects</p></a></li>
-              <li class="navigation-bar-item"><a href="contact.html"><p>Contact</p></a></li>
-            </ul>
+            <h1>Dennis Heeffer</h1>
           </div>
         </div>
-      </div>
+        <ul class="contact content">
+          <li><a href="#" class="socialbutton fa fa-twitter"></a></li>
+          <li><a href="#" class="socialbutton fa fa-linkedin"></a></li>
+          <li><a href="#" class="socialbutton fa fa-github"></a></li>
+        </ul>
     </div>
 
-    <ul class="projects">
-      <li class="project">
-        <div class="content">
-          <h2 class="white-background">Photon Tracer</h2>
-          <div class="showcase right" style="width: 300px">
-            <img src="photontracer.png">
-            <p>Ambient occlusion, global illumination and soft shadows</p>
+    <div class="content project-container">
+      <div class="project">
+        <div class="project-header">
+          <h2>ProjectName</h2>
+        </div>
+        <div class="project-body">
+          <img src="res/test.png">
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <div class="project-footer">
+            <a href="#" class="default-button">Read More</a>
+            <a href="#" class="default-button">Github <p class="fa fa-github"></p></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-header">
+          <h2>ProjectName</h2>
+        </div>
+        <div class="project-body">
+          <img src="res/test.png">
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <div class="project-footer">
+            <a href="#" class="default-button">Read More</a>
+            <a href="#" class="default-button">Github <p class="fa fa-github"></p></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project bigproject">
+        <div class="project-header">
+          <h2>BigProjectName</h2>
+        </div>
+        <div class="project-body">
+          <img src="res/test.png">
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <div class="button-wrapper"><a href="#" class="default-button">Github <p class="fa fa-github"></p></a></div>
+        </div>
+
+        <div class="subprojects project-container">
+          <div class="project">
+            <div class="project-header">
+              <h2>ProjectName</h2>
+            </div>
+            <div class="project-body">
+              <img src="res/test.png">
+              <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <div class="project-footer">
+                <a href="#" class="default-button">Read More</a>
+              </div>
+            </div>
           </div>
 
-          <p>
-          I am working on a photon tracer, which is basically a pathtracer but slower.<br>
-          <br>
-          Instead of tracing from the camera, I'm tracing form the lightsources, because this is more like light works in the real world, I can add ambient occlusion, global illumination and soft shadows with a small amount of code, and it is more accurate than an approximation as well. This photon tracer is written on the CPU, because it is way easier to do it this way, and I am not really planning on actually using it for anything serious.
-          <br>
-          I also want to implement stuff like reflection, refraction and physically based materials.<br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          </p>
-          <a class="white-background" href="https://github.com/Spheya/PhotonTracer">Github Link</a>
-        </div>
-      </li>
-
-      <li class="project">
-        <div class="content">
-          <h2 class="white-background">Voxel Raytracer</h2>
-          <div class="showcase left" style="width: 500px">
-            <img src="voxelraytracer.png">
-            <p>Ambient occlusion, global illumination and soft shadows</p>
+          <div class="project">
+            <div class="project-header">
+              <h2>ProjectName</h2>
+            </div>
+            <div class="project-body">
+              <img src="res/test.png">
+              <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <div class="project-footer">
+                <a href="#" class="default-button">Read More</a>
+              </div>
+            </div>
           </div>
-          <p>
-          I worked on a Voxel Raytracer for a school project in GLSL with C#<br>
-          <br>
-          Our goal was to create a voxel game, and we thought that raytracing would be fun. Because it needed to be done quickly there isn't really that much to it. It's just a raytracer that can render a voxel mesh.<br>
-          We used checkerboard rendering to make sure that it ran at a high enough fps. And we also didn't implement refraction, as we thought it would cause too much of a performance loss and we didn't really need it.
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-        </p>
-        <br>
-        <a class="white-background" href="https://github.com/Spheya/Voxel-Raytracer">Github Link</a>
-        </div>
-      </li>
 
-      <li class="project">
-        <div class="content">
-          <h2 class="white-background">Hack and Slash Platformer Game</h2>
-          <p>This project is still in development, expect more info here later.<br>
-          <br>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed cras ornare arcu dui vivamus arcu. Urna duis convallis convallis tellus. Ullamcorper a lacus vestibulum sed arcu non odio euismod. Nulla aliquet enim tortor at auctor urna nunc. Sollicitudin aliquam ultrices sagittis orci. Ac auctor augue mauris augue neque gravida in fermentum. Tellus pellentesque eu tincidunt tortor aliquam nulla facilisi cras. Fames ac turpis egestas sed tempus urna. Ipsum dolor sit amet consectetur adipiscing elit duis. Commodo viverra maecenas accumsan lacus vel facilisis volutpat est velit. Ut diam quam nulla porttitor massa id neque aliquam vestibulum. Consectetur adipiscing elit pellentesque habitant morbi tristique senectus. Sed enim ut sem viverra aliquet. Consectetur adipiscing elit ut aliquam purus sit amet. Nisl suscipit adipiscing bibendum est ultricies. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt.<br>
-          <br>
-          Pellentesque massa placerat duis ultricies. Scelerisque fermentum dui faucibus in ornare quam. Lectus arcu bibendum at varius. Pretium lectus quam id leo in vitae. Dapibus ultrices in iaculis nunc sed augue. Risus at ultrices mi tempus imperdiet. Sollicitudin tempor id eu nisl nunc. Sit amet mattis vulputate enim nulla aliquet porttitor lacus luctus. Augue neque gravida in fermentum et sollicitudin ac. Eu tincidunt tortor aliquam nulla facilisi cras fermentum. Libero volutpat sed cras ornare arcu dui vivamus arcu. Etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus. Aliquet sagittis id consectetur purus. Hendrerit dolor magna eget est lorem ipsum. Velit dignissim sodales ut eu sem. In metus vulputate eu scelerisque.
-          </p>
+          <div class="project">
+            <div class="project-header">
+              <h2>ProjectName</h2>
+            </div>
+            <div class="project-body">
+              <img src="res/test.png">
+              <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <div class="project-footer">
+                <a href="#" class="default-button">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="project-header">
+              <h2>ProjectName</h2>
+            </div>
+            <div class="project-body">
+              <img src="res/test.png">
+              <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <div class="project-footer">
+                <a href="#" class="default-button">Read More</a>
+              </div>
+            </div>
+          </div>
         </div>
-      </li>
-    </ul>
+      </div>
+
+      <div class="project-footer"></div>
+    </div>
 
     <div class="footer">
+      <ul class="contact content">
+        <li><a href="#" class="socialbutton fa fa-twitter"></a></li>
+        <li><a href="#" class="socialbutton fa fa-linkedin"></a></li>
+        <li><a href="#" class="socialbutton fa fa-github"></a></li>
+      </ul>
     </div>
   </body>
 </html>
