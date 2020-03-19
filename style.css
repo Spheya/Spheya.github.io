@@ -98,7 +98,7 @@ h3 {
   flex-grow: 1;
   width: 45%;
   margin: 32px 2% 16px 2%;
-  min-width: 400px;
+  min-width: 350px;
 }
 
 .bigproject {
@@ -126,18 +126,6 @@ h3 {
 }
 
 .project h3 {
-  padding: 10px 32px 6px 32px;
-  margin-bottom: 10px;
-  box-shadow: var(--default-shadow);
-
-  border-bottom: 4px solid var(--accent-colour);
-}
-
-.bigproject h2 {
-  padding: 10px 128px 6px 128px;
-}
-
-.bigproject .project h2 {
   padding: 10px 32px 6px 32px;
   margin-bottom: 10px;
   box-shadow: var(--default-shadow);
