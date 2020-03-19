@@ -110,7 +110,7 @@ h2 {
 }
 
 .project h2 {
-  padding: 10px 64px 6px 64px;
+  padding: 10px 32px 6px 32px;
   margin-bottom: 10px;
   box-shadow: var(--default-shadow);
 
@@ -121,6 +121,31 @@ h2 {
   padding: 10px 128px 6px 128px;
 }
 
+.bigproject .project h2 {
+  padding: 10px 32px 6px 32px;
+  margin-bottom: 10px;
+  box-shadow: var(--default-shadow);
+
+  border-bottom: 4px solid var(--accent-colour);
+}
+
+.project:not(.empty-project) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 4px solid var(--accent-colour);
+}
+
+.project-body {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project img {
+  margin-bottom: 12px;
+}
+
 .project-header {
   display: flex;
   justify-content: center;
@@ -129,8 +154,10 @@ h2 {
 .project-footer{
   display: flex;
   justify-content: flex-end;
-  border-bottom: 4px solid var(--accent-colour);
+  flex-direction: row;
   width: 100%;
+  align-self: stretch;
+  margin-top: auto;
 }
 
 .button-wrapper{
@@ -149,6 +176,7 @@ h2 {
   text-decoration: none;
   color: var(--text-colour);
   transition: filter 100ms;
+  margin-top: 8px;
 }
 
 .default-button:hover {
