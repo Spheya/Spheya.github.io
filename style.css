@@ -33,6 +33,14 @@ h2 {
   padding: 10px;
 }
 
+h3 {
+  display: inline-block;
+  background-color: var(--text-colour);
+  color: var(--background-colour);
+  font: bold 24px 'Work Sans', sans-serif;
+  padding: 10px;
+}
+
 .title {
   background-color: var(--header-colour);
   padding: 15px 0px 10px 0px;
@@ -117,6 +125,14 @@ h2 {
   border-bottom: 4px solid var(--accent-colour);
 }
 
+.project h3 {
+  padding: 10px 32px 6px 32px;
+  margin-bottom: 10px;
+  box-shadow: var(--default-shadow);
+
+  border-bottom: 4px solid var(--accent-colour);
+}
+
 .bigproject h2 {
   padding: 10px 128px 6px 128px;
 }
@@ -134,6 +150,10 @@ h2 {
   flex-direction: column;
   align-items: center;
   border-bottom: 4px solid var(--accent-colour);
+}
+
+.bigproject .project:not(.empty-project){
+  border-bottom: 4px dashed var(--accent-colour);
 }
 
 .project-body {
