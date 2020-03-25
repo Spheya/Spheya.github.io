@@ -166,6 +166,7 @@ h3 {
   width: 100%;
   align-self: stretch;
   margin-top: auto;
+  padding: 8px 0px;
 }
 
 .button-wrapper{
@@ -180,7 +181,6 @@ h3 {
 .default-button {
   background-color: var(--header-colour);
   padding: 8px 32px;
-  margin-bottom: 10px;
   text-decoration: none;
   color: var(--text-colour);
   transition: filter 100ms;

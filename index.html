@@ -19,9 +19,9 @@
           </div>
         </div>
         <ul class="contact content">
-          <li><a href="#" class="socialbutton fa fa-twitter"></a></li>
-          <li><a href="#" class="socialbutton fa fa-linkedin"></a></li>
-          <li><a href="#" class="socialbutton fa fa-github"></a></li>
+          <!--li><a href="#" class="socialbutton fa fa-twitter"></a></li-->
+          <li><a href="https://www.linkedin.com/in/dennis-heeffer-1851ab18b/" target="_blank" class="socialbutton fa fa-linkedin"></a></li>
+          <li><a href="https://github.com/Spheya/" target="_blank" class="socialbutton fa fa-github"></a></li>
         </ul>
     </div>
 
@@ -32,11 +32,16 @@
         </div>
         <div class="project-body">
           <img src="res/photontracing.png" style="width:60%;">
-          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p class="description">
+          I made a simple photon tracer. Which is like a path tracer, but instead of casting rays from the camera,
+		  rays are cast from the lightsource like in real life. I only implemented it that rays bounce into the 
+		  scene again when they hit the surface of an object, and that already generated the image seen above,
+		  where stuff like global illumination, ambient occlusion and soft shadows are visible. But after rendering
+		  this image I kind of stopped working on it as it took about an hour to render this.
+		  </p>
         </div>
         <div class="project-footer">
-          <a href="#" class="default-button">Read More</a>
-          <a href="#" class="default-button">Github <p class="fa fa-github"></p></a>
+          <a href="https://github.com/Spheya/PhotonTracer" target="_blank" class="default-button">Github <p class="fa fa-github"></p></a>
         </div>
       </div>
 
@@ -46,25 +51,33 @@
         </div>
         <div class="project-body">
           <img src="res/voxelraytracing.png">
-          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p class="description">
+		  For a school project, I worked on a realtime voxel raytracer. I did most of the rendering code. The
+		  renderer supports having multiple grids with voxels and each grid can be rotated, scaled and translated.
+		  As optimisation, we used checkerboard rendering, which looked way worse than we thought it would.
+		  </p>
         </div>
         <div class="project-footer">
-          <a href="#" class="default-button">Read More</a>
-          <a href="#" class="default-button">Github <p class="fa fa-github"></p></a>
+          <a href="https://github.com/Spheya/Voxel-Raytracer" target="_blank" class="default-button">Github <p class="fa fa-github"></p></a>
         </div>
       </div>
 
       <div class="project bigproject">
         <div class="project-header">
-          <h2>Salamander Engine</h2>
+          <h2>Slamanander Engine</h2>
         </div>
         <div class="project-body">
           <img src="res/salamanderEngine.png">
-          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
+          <p class="description">
+		  Slamanander Engine (yes, it's spelled like that) is a simple game engine I've worked on in my free
+		  time, it's mostly made for learning, making an actual game in it probably wouldn't be practical. At
+		  the moment it consist of an entity component system and a physically based renderer. Slamanander
+		  Engine is written in C++.
+		  </p>
+		  
         </div>
         <div class="project-footer">
-          <a href="#" class="default-button">Github <p class="fa fa-github"></p></a>
+          <a href="#" target="_blank" class="default-button">Github <p class="fa fa-github"></p></a>
         </div>
 
         <div class="subprojects project-container">
@@ -74,37 +87,48 @@
             </div>
             <div class="project-body">
               <img src="res/pbrMaterials.png">
-              <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p class="description">
+				Slamanander Engine uses physically based rendering, which was the first time for me that I
+				worked with PBR. Each material has a metalicness map, a normal map, a roughness map and an
+				albedo map. I used those maps instead of some more detailed material properties, because I
+				saw that mosts artists used those maps. Or other maps, like glossiness maps, which can
+				easily be converted to those.
+			  </p>
             </div>
             <div class="project-footer">
-              <a href="#" class="default-button">Read More</a>
             </div>
           </div>
-
-          <div class="project">
-            <div class="project-header">
-              <h3>Entity Component System</h3>
-            </div>
-            <div class="project-body">
-              <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-            <div class="project-footer">
-              <a href="#" class="default-button">Read More</a>
-            </div>
-          </div>
-
-          <div class="project">
+		  
+		  <div class="project">
             <div class="project-header">
               <h3>Hybrid Raytracing</h3>
             </div>
             <div class="project-body">
-              <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p class="description">In Progress</p>
             </div>
             <div class="project-footer">
-              <a href="#" class="default-button">Read More</a>
             </div>
           </div>
-
+		  
+		  <div class="project">
+            <div class="project-header">
+              <h3>Entity Component System</h3>
+            </div>
+            <div class="project-body">
+              <p class="description">
+				I wrote my own data-oriented multithreaded entity component system for this project.
+				I don't really have much to write about, it's just an ECS, you can create systems, you
+				can give components to entities, you can remove components from entities, you can
+				even add and remove components from entities within the update function of a system.
+				The dependencies between the systems are automatically generated using the components
+				they have access to, but you can add extra dependencies between them if you want to,
+				which can be extremely useful when you make rendering steps a system.
+			  </p>
+            </div>
+            <div class="project-footer">
+            </div>
+          </div>
+		  
           <div class="project empty-project">
           </div>
         </div>
@@ -113,10 +137,10 @@
 
     <div class="footer">
       <ul class="contact content">
-        <li><a href="#" class="socialbutton fa fa-twitter"></a></li>
-        <li><a href="#" class="socialbutton fa fa-linkedin"></a></li>
-        <li><a href="#" class="socialbutton fa fa-github"></a></li>
-      </ul>
+        <!--li><a href="#" class="socialbutton fa fa-twitter"></a></li-->
+        <li><a href="https://www.linkedin.com/in/dennis-heeffer-1851ab18b/" target="_blank" class="socialbutton fa fa-linkedin"></a></li>
+        <li><a href="https://github.com/Spheya/" target="_blank" class="socialbutton fa fa-github"></a></li>
+       </ul>
     </div>
   </body>
 </html>
