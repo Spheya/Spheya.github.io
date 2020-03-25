@@ -45,7 +45,10 @@ h3 {
   background-color: var(--header-colour);
   padding: 15px 0px 10px 0px;
   border-bottom: 6px solid var(--accent-colour);
+  
   box-shadow: var(--default-shadow);
+  -moz-box-shadow: var(--default-shadow);
+  -webkit-box-shadow: var(--default-shadow);
 }
 
 .content {
@@ -71,8 +74,11 @@ h3 {
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
-  box-shadow: var(--default-shadow);
   transition: filter 100ms;
+  
+  box-shadow: var(--default-shadow);
+  -moz-box-shadow: var(--default-shadow);
+  -webkit-box-shadow: var(--default-shadow);
 }
 
 .socialbutton.fa-linkedin {
@@ -120,7 +126,10 @@ h3 {
 .project h2 {
   padding: 10px 32px 6px 32px;
   margin-bottom: 10px;
+  
   box-shadow: var(--default-shadow);
+  -moz-box-shadow: var(--default-shadow);
+  -webkit-box-shadow: var(--default-shadow);
 
   border-bottom: 4px solid var(--accent-colour);
 }
@@ -128,7 +137,10 @@ h3 {
 .project h3 {
   padding: 10px 32px 6px 32px;
   margin-bottom: 10px;
+  
   box-shadow: var(--default-shadow);
+  -moz-box-shadow: var(--default-shadow);
+  -webkit-box-shadow: var(--default-shadow);
 
   border-bottom: 4px solid var(--accent-colour);
 }
@@ -152,7 +164,10 @@ h3 {
 
 .project img {
   margin-bottom: 12px;
+  
   box-shadow: var(--default-shadow);
+  -moz-box-shadow: var(--default-shadow);
+  -webkit-box-shadow: var(--default-shadow);
 }
 
 .project-header {
