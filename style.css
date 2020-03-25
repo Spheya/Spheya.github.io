@@ -152,6 +152,7 @@ h3 {
 
 .project img {
   margin-bottom: 12px;
+  box-shadow: var(--default-shadow);
 }
 
 .project-header {
