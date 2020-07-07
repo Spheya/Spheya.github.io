@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Polyrealm Thingy~</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap" rel="stylesheet"> 
+</head>
+<body>
+
+<pre>
+<div style = "
+	display:flex;
+	justify-content: center;
+">
+<p id="put-text-here-pls" style="
+	border: 2px solid black;
+	padding: 32px 32px 35px 32px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	font-family: 'Roboto Mono', monospace;
+	letter-spacing: 0.25em;
+	line-height: 0.85em;
+	white-space: pre-wrap;
+	display:inline-block;
+">Hello World!</p>
+</div>
+</pre>
+
+<script>
+async function sleep(msec) {
+    return new Promise(resolve => setTimeout(resolve, msec));
+}
+
+var t = 0;
+
+const loopThingy = async () => {
+	while(true) {
+		// Lookup table to convert values to ascii art
+		lookupTable = [ '#', '#', 'm', 'm', 'o', '/', '|', '|', ':', '-', '-', '.', ' ']
+		// Size of the ascii art
+		const size = 49;
+		
+		// Setup 2d array
+		var values = new Array(size);
+		for(var i = 0; i < size; i++)
+			values[i] = new Array(size);
+		
+		// Do some cool math magic to generate EPICK patterns (its just julia sets lmao)
+		const iterations = lookupTable.length - 2;
+
+		var real = Math.sin(t * 0.025) - 0.5;
+		var complex = Math.cos(t * 0.025) * 0.5 + 0.16;
+		
+		for(var x = 0; x < size; x++) {
+			for(var y = 0; y < size; y++) {
+				var a = (x - size / 2) / 24;
+				var b = (y - size / 2) / 24;
+				
+				var iteration = 0;
+				while(iteration < iterations) {
+					var c = a * a;
+					var d = b * b;
+					var e = 2.0 * a * b;
+				
+					a = c - d + real;
+					b = e + complex;
+					if(a*a + b*b > 2.0)
+						break;
+					
+					++iteration;
+				}
+				
+				values[x][y] = iteration + 1 - ((x + y) % 2);
+			}
+		}
+		
+		// Convert the generated values to a string
+		var str = "";
+		for(var y = 0; y < size; y++) {
+			for(var x = 0; x < size; x++)
+				str += lookupTable[values[x][y]];
+			str += '\n';
+		}
+		
+		// Put text in the center
+		var text = "Polyrealm";
+		var textY = Math.ceil(size / 2);
+		var textX = Math.ceil(size / 2) - 4;
+		
+		for(var i = 0; i < text.length; i++) {
+			var x = textX + i;
+			var y = textY;
+			
+			if(values[x][y] > 2)
+				str = str.substr(0, x + y * (size  + 1)) + text[i] + str.substr(x + y * (size  + 1) + 1, str.length);
+		}
+			
+		
+		// Update the text
+		document.getElementById("put-text-here-pls").innerHTML = str;
+		await sleep(16);
+		++t;
+	}
+}
+
+loopThingy();
+</script>
+
+</body>
+</html>
+
